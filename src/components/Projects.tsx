@@ -1,12 +1,11 @@
 import React from 'react';
-import { motion } from 'framer-motion';
+import Animation from './Animation';
 
 const Projects: React.FC = () => {
 
-
     return (
 
-        <motion.body initial={{ opacity: 0, y: -50 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 1.5 }}>
+        <Animation>
 
             <section id="projects" className="flex flex-col mt-24 mx-4 md:mx-56 h-screen">
 
@@ -15,7 +14,7 @@ const Projects: React.FC = () => {
                 <span className="text-emerald-300 font-bold"> WIP!</span>
             </section>
 
-        </motion.body>
+        </Animation>
 
     );
 };

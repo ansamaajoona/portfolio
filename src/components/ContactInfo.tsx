@@ -1,9 +1,9 @@
 import React from 'react';
-import { motion } from 'framer-motion';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import {
     faEnvelope,
 } from '@fortawesome/free-solid-svg-icons'
+import Animation from './Animation';
 
 import {
     faGithub,
@@ -15,7 +15,7 @@ const ContactInfo: React.FC = () => {
 
     return (
 
-        <motion.body initial={{ opacity: 0, y: -50 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 1.5 }}>
+        <Animation>
 
             <section id="contactinfo" className="flex flex-col mt-24 mx-4 md:mx-56 h-48">
 
@@ -42,7 +42,7 @@ const ContactInfo: React.FC = () => {
 
             </section>
 
-        </motion.body>
+        </Animation>
 
     );
 };

@@ -1,9 +1,9 @@
 import React from 'react';
-import { motion } from 'framer-motion';
+import Animation from './Animation';
 
 const Introduction: React.FC = () => {
     return (
-        <motion.body initial={{ opacity: 0, y: -50 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 1 }}>
+        <Animation>
             <section id="about" className="flex flex-col mt-10 mx-4 md:mx-56 lg:h-screen">
                 <div className="flex flex-col">
                     <span className="text-emerald-300 font-mono">Hello there, my name is</span>
@@ -19,15 +19,25 @@ const Introduction: React.FC = () => {
                         I'm actively seeking opportunities to contribute my skills in developing high-quality software that addresses
                         and solves challenging business problems.
                     </span>
-                    <a
-                        href="mailto:joona.ansa@gmail.com"
-                        className="flex justify-center items-center block mt-5 w-48 font-semibold border border-emerald-300 text-emerald-300 h-12 rounded shadow-md hover:cursor-pointer hover:bg-emerald-300 hover:text-black duration-100"
-                    >
-                        Let's discuss!
-                    </a>
+                    <div className="flex flex-row">
+                        <a
+                            href="mailto:joona.ansa@gmail.com"
+                            className="flex justify-center items-center block mt-5 mr-5 min-w-min w-48 px-5 font-semibold border border-emerald-300 text-emerald-300 h-12 rounded shadow-md hover:cursor-pointer hover:bg-emerald-300 hover:text-black duration-100"
+                        >
+                            Let's discuss!
+                        </a>
+                        <a 
+                            onClick={() => { window.open('resume.pdf')}}
+                            className="flex justify-center items-center block mt-5 mr-5 text-emerald-300 font-semibold hover:underline hover:cursor-pointer duration-100"
+                            
+                        >
+                            My Résumé
+                        </a>
+                    </div>
+
                 </div>
             </section>
-        </motion.body>
+        </Animation>
     );
 };
 
