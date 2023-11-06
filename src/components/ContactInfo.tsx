@@ -30,7 +30,7 @@ const ContactInfo: React.FC = () => {
 
                     <div className="flex py-2">
                         <span className="mr-3 w-6"><FontAwesomeIcon icon={faLinkedinIn} className="text-emerald-300" /></span>
-                        <a href="https://www.linkedin.com/in/joona-ansamaa-8941131a9/" target="_blank" className="tracking-widest text-gray-200 semibold hover:underline">joona-ansamaa-8941131a9</a>
+                        <a href="https://www.linkedin.com/in/ansamaajoona/" target="_blank" className="tracking-widest text-gray-200 semibold hover:underline">ansamaajoona</a>
                     </div>
 
                     <div className="flex py-2">
