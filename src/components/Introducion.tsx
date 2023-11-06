@@ -11,7 +11,7 @@ const Introduction: React.FC = () => {
                         Joona Ansamaa
                     </h1>
                     <h2 className="font-extrabold text-transparent text-2xl md:text-4xl bg-clip-text bg-gradient-to-r from-gray-100 to-gray-500">
-                        I build s**tware with passion
+                        I craft high-quality software with passion
                     </h2>
                 </div>
                 <div className="flex flex-col justify-between mt-5 w-full md:w-1/2">
